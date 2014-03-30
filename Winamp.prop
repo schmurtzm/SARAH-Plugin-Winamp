@@ -1,7 +1,7 @@
 {
   "modules" : { 
     "Winamp"  : {
-      "description": "Controle de Winamp",
+      "description": "Controle vocal de Winamp",
       "version": "1.0",
       "Catégorie": "Speech, Multimedia",
 	  "Auteur": "Schmurtz"
