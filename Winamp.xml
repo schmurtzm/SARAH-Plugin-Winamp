@@ -1,0 +1,39 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleWinamp" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleWinamp" scope="public">
+	<example>Winamp Lecture</example>
+	
+    <tag>out.action=new Object(); </tag>
+	
+    <item>Winamp</item>
+	<one-of>      
+	  <item>Lecture<tag>out.action.WinampAction="Play";</tag></item>
+	  <item>play<tag>out.action.WinampAction="Play";</tag></item>
+	  <item>stop<tag>out.action.WinampAction="stop";</tag></item>
+	  <item>pause<tag>out.action.WinampAction="pause";</tag></item>
+	  <item>Suivante<tag>out.action.WinampAction="Next";</tag></item>
+	  <item>Précédente<tag>out.action.WinampAction="Prev";</tag></item>
+	  <item>Suivant<tag>out.action.WinampAction="Next";</tag></item>
+	  <item>Précédent<tag>out.action.WinampAction="Prev";</tag></item>
+	  <item>dernier<tag>out.action.WinampAction="StopAfter";</tag></item>
+	  <item>dernière<tag>out.action.WinampAction="StopAfter";</tag></item>
+	  <item>titre<tag>out.action.WinampAction="Title";</tag></item>
+	  <item>Volume à 
+		<one-of> 
+			<item>0<tag>out.action.WinampAction="VolSet OFF";out.action.param1="VolumeChange";out.action.param2=0;</tag></item>
+			<item>1<tag>out.action.WinampAction="VolSet 25";out.action.param1="VolumeChange";out.action.param2=1;</tag></item>
+			<item>2<tag>out.action.WinampAction="VolSet 50";out.action.param1="VolumeChange";out.action.param2=2;</tag></item>
+			<item>3<tag>out.action.WinampAction="VolSet 75";out.action.param1="VolumeChange";out.action.param2=3;</tag></item>
+			<item>4<tag>out.action.WinampAction="VolSet 100";out.action.param1="VolumeChange";out.action.param2=4;</tag></item>
+			<item>5<tag>out.action.WinampAction="VolSet 125";out.action.param1="VolumeChange";out.action.param2=5;</tag></item>
+			<item>6<tag>out.action.WinampAction="VolSet 150";out.action.param1="VolumeChange";out.action.param2=6;</tag></item>
+			<item>7<tag>out.action.WinampAction="VolSet 175";out.action.param1="VolumeChange";out.action.param2=7;</tag></item>
+			<item>8<tag>out.action.WinampAction="VolSet 200";out.action.param1="VolumeChange";out.action.param2=8;</tag></item>
+			<item>9<tag>out.action.WinampAction="VolSet 225";out.action.param1="VolumeChange";out.action.param2=9;</tag></item>
+			<item>10<tag>out.action.WinampAction="VolSet MAX";out.action.param1="VolumeChange";out.action.param2=10;</tag></item>
+		</one-of>
+	   </item>
+    </one-of>
+	
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/Winamp";</tag>
+  </rule> 
+</grammar>

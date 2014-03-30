@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery("#plugin-menu .plugin-nav a").click(function () {
+            jQuery("#plugin-menu .content > ul").hide();
+            jQuery("#plugin-menu .plugin-nav ul li").removeClass("active");
+            jQuery(this).parent().addClass("active");
+            jQuery("#" + jQuery(this).data("toggle")).show();
+            return false;
+        });
+    });
+</script></head>
+<body><p class="page-header">
+	<span class="lead">Ce module permet de piloter Winamp avec SARAH</span><br><br>
+	Participation au plugin:<br>Schmurtz.
+</p>
+
+<div id="plugin-menu" class="row">
+    <!--Navigation-->
+    <div class="stretch col-md-3 well plugin-nav">
+        <ul class="nav nav-list"><li><a href="#" data-toggle="plugin-config-sarah">Introduction</a></li><li><a href="index.html#" data-toggle="plugin-generator">Les commandes vocales</a></li><li><a href="#" data-toggle="plugin-generator-info">Infos</a></li></ul>
+    </div>
+	<!--Content-->
+	<div class="col-md-9 content">
+		
+		<!--Intro & Version-->
+		<ul class="unstyled" id="plugin-config-sarah">
+			<div class="alert alert-success">Introduction</div><br>
+				Ce plugin permet de controler Winamp facilement grace à S.A.R.A.H..<br><br>
+
+			<li> Version 1.0:<br>
+			[X] Implémentation des commandes de base.<br>
+			</li><br>
+		</ul>
+
+        <!--Infos-->
+         <ul class="unstyled" id="plugin-generator-info" style="display: none;">
+			<div class="alert alert-success">Infos</div>
+			<li><i class="icon-play-circle"></i> Cette doc est allégrement pompée sur celle du plugin XBMC réalisé par Jean-Philippe Encausse, Jérôme Veyret, etc.<br>
+ 			</li><br>
+			
+            <li><i class="icon-play-circle"></i> Ce script s'appuie un utilitaire nommé <a href="http://membres.multimania.fr/clamp/" target="_blank">Clamp</a> qui permet de controler Winamp en ligne de commande.<br>
+
+<br>
+            </li><li><i class="icon-play-circle"></i> A l'origine je comptais écrire mon plugin uniquement en javascript en me basant sur
+un plugin firefox de controle existant comme <a href="http://www.owenrudge.net/utils/foxamp" target="_blank">Foxamp</a>
+ou le regrété foxytunes (qui savait controler plusieurs players
+différents). Mais étant une véritable quiche en développement j'ai vite
+abandonné ne sachant pas comment utiliser user32.dll et sa fonction
+FindWindowW en javascript. Bref ça fonctionne autrement et le résultat est le même ;)<br>
+ 			</li><br>
+			
+			<li><i class="icon-play-circle"></i>
+Un de ces 4 j'implémenterai d'autre fonctions comme la notation des
+morceaux par commande vocale, le statut actuel de Winamp, repeat, etc..<br>
+			Si vous avez le temps de le faire avant moi n'hésitez pas à en faire profiter la communauté :).<br><br>
+
+		            </li><li><i class="icon-play-circle"></i> Script réalisé par <a href="http://schmurtzm.blogspot.fr/" target="_blank">Schmurtz</a>.<br>	
+			
+			
+        </li></ul>
+		<ul class="unstyled" id="plugin-generator" style="display: none;">
+			<div class="alert alert-success">Les commandes Vocales</div>
+			Toutes les commandes sont préfixée par "Winamp". Il ne faut pas prononcer "Sarah". <br> Par exemple "Winamp Lecture" suffit pour lancer la lecture.<br><br>
+            <li><i class="icon-play-circle"></i> "Winamp lecture" ou "Winamp play"</li><br>
+			<li><i class="icon-play-circle"></i> "Winamp stop" </li><br>
+			<li><i class="icon-play-circle"></i> "Winamp pause" </li><br>
+			<li><i class="icon-play-circle"></i> "Winamp suivant(e)" </li><br>
+			<li><i class="icon-play-circle"></i> "Winamp précédent(e)" </li><br>
+			<li><i class="icon-play-circle"></i> "Winamp dernier(e)" -&gt; stop winamp après avoir joué la piste courante</li><br>
+			<li><i class="icon-play-circle"></i> "Winamp volume" à 0-10 -&gt; permet de choisir le niveau de volume entre 1 et 10</li><br>
+			<li><i class="icon-play-circle"></i> "Winamp titre" -&gt; Sarah prononce le nom de l'artiste et de la piste (à la française :p)</li><br>
+			
+        </ul>
+    </div>
+</div></body></html>
