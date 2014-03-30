@@ -28,5 +28,6 @@ Par exemple "Winamp Lecture" suffit pour lancer la lecture.
 "Winamp titre" -> Sarah prononce le nom de l'artiste et de la piste (à la française :p)
 
 
-
+Ce Plugin est basé sur le Freeware Clamp : http://membres.multimania.fr/clamp/
 D'autre fonctions restent à implémenter comme la notation des morceaux par commande vocale, le statut actuel de Winamp, repeat, etc..
+
