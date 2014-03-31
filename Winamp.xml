@@ -6,18 +6,18 @@
 	
     <item>Winamp</item>
 	<one-of>      
-	  <item>Lecture<tag>out.action.WinampAction="Play";</tag></item>
+	  <item>lecture<tag>out.action.WinampAction="Play";</tag></item>
 	  <item>play<tag>out.action.WinampAction="Play";</tag></item>
-	  <item>stop<tag>out.action.WinampAction="stop";</tag></item>
-	  <item>pause<tag>out.action.WinampAction="pause";</tag></item>
-	  <item>Suivante<tag>out.action.WinampAction="Next";</tag></item>
-	  <item>Précédente<tag>out.action.WinampAction="Prev";</tag></item>
-	  <item>Suivant<tag>out.action.WinampAction="Next";</tag></item>
-	  <item>Précédent<tag>out.action.WinampAction="Prev";</tag></item>
+	  <item>stop<tag>out.action.WinampAction="Stop";</tag></item>
+	  <item>pause<tag>out.action.WinampAction="Pause";</tag></item>
+	  <item>suivante<tag>out.action.WinampAction="Next";</tag></item>
+	  <item>précédente<tag>out.action.WinampAction="Prev";</tag></item>
+	  <item>suivant<tag>out.action.WinampAction="Next";</tag></item>
+	  <item>précédent<tag>out.action.WinampAction="Prev";</tag></item>
 	  <item>dernier<tag>out.action.WinampAction="StopAfter";</tag></item>
 	  <item>dernière<tag>out.action.WinampAction="StopAfter";</tag></item>
 	  <item>titre<tag>out.action.WinampAction="Title";</tag></item>
-	  <item>Volume à 
+	  <item>volume à 
 		<one-of> 
 			<item>0<tag>out.action.WinampAction="VolSet OFF";out.action.param1="VolumeChange";out.action.param2=0;</tag></item>
 			<item>1<tag>out.action.WinampAction="VolSet 25";out.action.param1="VolumeChange";out.action.param2=1;</tag></item>

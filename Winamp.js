@@ -63,11 +63,13 @@ exports.action = function (data, callback, config, SARAH)
                         callback({ 'tts' : Message  });
                         break;
                     default:
-                        //callback({ 'tts' : "action effectuée" });
+						if (data.param1 == null) {
+                        callback({ 'tts' : "action effectuée" });
+						}
                         break;
                 }
                 if (data.param1 == 'VolumeChange') {
-                    callback({'tts' : "Volume à " + data.param2 + "sur 10"});
+                    callback({'tts' : "volume à " + data.param2 + "sur 10"});
                 }
 
             }
